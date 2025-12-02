@@ -1,0 +1,174 @@
+:root {
+  --green: #008037;
+  --blue: #1986c8;
+  --blue2: #1eb8d1;
+  --black: #000000;
+  --bg: #050505;
+  --card-bg: #111;
+  --card-border: #222;
+  --text: #eaeaea;
+  --muted: #bdbdbd;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif; }
+
+.container { max-width: 480px; margin: 0 auto; padding: 20px; }
+
+/* Header & Profile Card */
+.profile-card { margin-bottom: 20px; }
+.profile-top { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+
+.avatar-wrap { position: relative; width: 64px; height: 64px; flex-shrink: 0; }
+.avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; display: block; background: #fff; padding: 2px; }
+.brand-badge { position: absolute; right: -4px; bottom: -4px; width: 24px; height: 24px; border-radius: 50%; background: #fff; padding: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.5); object-fit: contain; }
+
+.identity h1 { margin: 0; font-size: 1.3rem; font-weight: 700; color: #fff; }
+.identity #title { margin: 4px 0; color: var(--muted); font-size: 0.9rem; line-height: 1.4; }
+.tagline { margin: 4px 0 0; color: var(--text); font-size: 0.9rem; font-weight: 500; }
+
+/* Chips */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.chip { 
+  background: transparent; 
+  border: 1px dashed #333; 
+  color: var(--muted); 
+  padding: 6px 12px; 
+  border-radius: 20px; 
+  font-size: 0.8rem; 
+  font-weight: 500;
+  cursor: default;
+}
+
+/* Actions Grid */
+.card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+.btn { 
+  appearance: none; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 12px; 
+  font-weight: 600; 
+  cursor: pointer; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+.btn:hover { opacity: 0.9; }
+.btn.primary { background: var(--green); color: #fff; }
+.btn.secondary { background: var(--blue); color: #fff; }
+.btn.outline { background: transparent; color: var(--blue2); border: 1px solid var(--blue2); }
+.btn.small { padding: 8px 12px; font-size: 0.9rem; width: auto; display: inline-flex; }
+
+/* Profile Section */
+.profile { margin-bottom: 24px; }
+.profile h2 { margin: 0 0 12px; font-size: 1.1rem; color: #fff; font-weight: 700; }
+.profile-list { display: flex; flex-direction: column; gap: 10px; }
+.profile-input { 
+  background: var(--card-bg); 
+  border: 1px solid var(--card-border); 
+  border-radius: 8px; 
+  padding: 12px 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  min-height: 48px;
+}
+.profile-input.row-between { justify-content: space-between; }
+.input-value { color: var(--text); font-size: 0.95rem; }
+.input-icon { color: var(--muted); font-size: 1.2rem; }
+.input-label-right { color: #fff; font-weight: 700; font-size: 0.9rem; }
+
+/* Social Actions */
+.social-actions { margin-bottom: 24px; }
+.social-btn { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  background: var(--card-bg); 
+  border: 1px solid var(--card-border); 
+  border-radius: 8px; 
+  padding: 12px; 
+  color: var(--text); 
+  text-decoration: none; 
+  font-weight: 600; 
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+.social-btn:hover { border-color: var(--blue); }
+.social-btn.full-width { width: 100%; margin-bottom: 10px; }
+.social-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.social-grid .social-btn { flex-direction: row; font-size: 0.9rem; padding: 10px 4px; }
+/* Last row with 2 items centered? Or just grid. Design shows 3 then 2. */
+.social-grid { grid-template-columns: repeat(3, 1fr); }
+/* To make the last two span nicely if we wanted, but grid is fine. */
+/* Let's make the last two take up half each if there are 5 items total in grid (excluding WA) */
+.social-grid > :nth-last-child(2):nth-child(4),
+.social-grid > :nth-last-child(1):nth-child(5) {
+  grid-column: span 1; /* Actually design shows 3 in one row, 2 in next. */
+}
+/* Better grid for 3 then 2: */
+.social-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.social-grid .social-btn {
+  flex: 1 1 30%; /* Grow to fill */
+}
+
+.icon svg { width: 20px; height: 20px; display: block; }
+
+/* Payment Section */
+.payment { margin-bottom: 30px; }
+.pay-card { 
+  background: transparent; 
+  border: none; 
+  padding: 0; 
+}
+.pay-header h2 { margin: 0 0 16px; font-size: 1.1rem; color: #fff; font-weight: 700; }
+.pay-methods { 
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  gap: 16px 24px; /* Row gap, Col gap */
+}
+.pay-item { display: flex; align-items: center; gap: 8px; color: var(--blue2); font-weight: 500; font-size: 0.95rem; }
+.pay-item .icon { color: var(--blue2); }
+.pay-link { color: var(--blue2); text-decoration: underline; cursor: pointer; }
+.pay-link:hover { color: #fff; }
+
+/* Specific colors for pay icons based on design? Design has them all blue/colored text. */
+/* Actually design shows: Transferencia (Purple icon/text), Efectivo (Green), PSE (Blue), Tarjeta (Blue). */
+/* Let's try to match that if possible, or keep uniform. */
+/* The design shows specific colors. Let's add classes or nth-child if needed, but uniform blue/link color is safe. */
+/* Let's use specific colors if we can see them. */
+/* Transferencia: Purple/Blue mix? Let's stick to theme blue for now to be safe. */
+
+#btn-pay-instructions { 
+  margin-left: auto; 
+  border-color: var(--blue2); 
+  color: var(--blue2); 
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer { text-align: center; color: #666; font-size: 0.85rem; margin-top: 40px; }
+
+/* QR Modal */
+.qr-modal { border: none; border-radius: 12px; padding: 0; background: transparent; }
+.qr-content { padding: 20px; background: #1a1a1a; border: 1px solid #333; border-radius: 12px; text-align: center; color: #fff; }
+.qr-content h3 { margin-top: 0; }
+.qr-content img { max-width: 100%; border-radius: 8px; margin: 10px 0; }
+.qr-actions { display: flex; gap: 10px; justify-content: center; }
+
+@media (max-width: 360px) {
+  .card-actions { grid-template-columns: 1fr; }
+  .social-grid .social-btn { flex: 1 1 45%; }
+}

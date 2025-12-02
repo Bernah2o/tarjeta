@@ -1,0 +1,45 @@
+# Exclude VCS and metadata
+.git
+.gitignore
+
+# Docs and local-only files
+README.md
+docker-compose.yml
+
+# Env / secrets
+.env
+.env.*
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build caches (not used here, but safe)
+node_modules
+dist
+build
+coverage
+.cache
+
+# Traefik local storage
+letsencrypt
+acme.json
+
+# Keep site assets and configs (DO NOT ignore)
+#!index.html
+#!styles.css
+#!app.js
+#!profile.json
+#!manifest.webmanifest
+#!service-worker.js
+#!nginx.conf
+img/

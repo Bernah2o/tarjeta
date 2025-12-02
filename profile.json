@@ -1,0 +1,39 @@
+{
+  "name": "DH2OCOL",
+  "title": "Especialistas en tanques elevados - Limpieza, Desinfección, Instalación y Mantenimiento Profesional.",
+  "company": "DH2OCOL",
+  "first_name": "",
+  "last_name": "",
+  "job_title": "",
+  "location": "",
+  "education": "",
+  "avatar": "img/logo.svg",
+  "brand_logo": "img/operador.png",
+  "bio": "",
+  "tags": [
+    "Solicitar Limpieza y Desinfección",
+    "Cotizar Instalación de Tanque",
+    "Servicio de Reparación / Mantenimiento",
+    "Inspección con Dron - Revisiones Visuales"
+  ],
+  "office_phone": "",
+  "websites": [
+    "https://dh2o.com.co"
+  ],
+  "email": "contacto@dh2o.com.co",
+  "whatsapp": "+573157484662",
+  "site": "https://card.dh2o.com.co",
+  "social": {
+    "instagram": "https://www.instagram.com/dh2ocol",
+    "facebook": "https://www.facebook.com/dh2ocol/",
+    "youtube": "https://www.youtube.com/@dh2ocol",
+    "tiktok": "https://www.tiktok.com/@dh2ocol?lang=es-419"
+  },
+  "nequi": "3008054296",
+  "colors": {
+    "green": "#008037",
+    "blue": "#1986c8",
+    "blue2": "#1eb8d1",
+    "black": "#000000"
+  }
+}
