@@ -42,4 +42,4 @@ acme.json
 #!manifest.webmanifest
 #!service-worker.js
 #!nginx.conf
-img/
+
