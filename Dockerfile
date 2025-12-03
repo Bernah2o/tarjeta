@@ -7,6 +7,7 @@ COPY ./app.js ./
 COPY ./profile.json ./
 COPY ./manifest.webmanifest ./
 COPY ./service-worker.js ./
+COPY ./img ./img
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
