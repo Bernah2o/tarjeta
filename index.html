@@ -23,20 +23,34 @@
       <section class="profile-card">
         <div class="profile-top">
           <div class="avatar-wrap">
-            <img class="avatar" src="img/logo.svg" alt="Logo DH2OCOL" />
-            <img class="brand-badge" src="img/operador.png" alt="Gerente" />
+            <img
+              id="avatar-img"
+              class="avatar"
+              src="img/berna.jpeg"
+              alt="Gerente"
+            />
+            <img
+              id="brand-badge-img"
+              class="brand-badge"
+              src="img/logo.svg"
+              alt="Logo DH2OCOL"
+            />
           </div>
           <div class="identity">
             <h1 id="name">DH2OCOL</h1>
             <p id="title">
-              Especialistas en tanques elevados - Limpieza, Desinfección,
-              Instalación y Mantenimiento Profesional.
+              Expertos certificados en limpieza, desinfección e instalación de
+              tanques elevados. Protegemos tu agua potable con procesos avalados
+              por normas sanitarias. Seguridad, calidad y resultados
+              comprobados.
             </p>
-            <p class="tagline">Cuidamos tu Agua, Cuidamos tu Salud</p>
+            <p id="subtitle" class="tagline">
+              Cuidamos tu Agua, Cuidamos tu Salud
+            </p>
           </div>
         </div>
 
-        <div class="chips">
+        <div id="chips" class="chips">
           <span class="chip">Solicitar Limpieza y Desinfección</span>
           <span class="chip">Cotizar Instalación de Tanque</span>
           <span class="chip">Servicio de Reparación / Mantenimiento</span>
@@ -61,19 +75,19 @@
         <h2>Perfil</h2>
         <div class="profile-list">
           <div class="profile-input">
-            <span class="input-value">Bernardino de Aguas</span>
-            <span class="input-icon">—</span>
+            <span id="first-name" class="input-value">Bernardino</span>
+            <span id="last-name" class="input-icon">de Aguas</span>
           </div>
 
           <div class="profile-input">
-            <span class="input-value"
+            <span id="job-title" class="input-value"
               >Ingeniero Industrial - Especialista en SST</span
             >
           </div>
 
           <div class="profile-input row-between">
-            <span class="input-value">Valledupar, Colombia</span>
-            <span class="input-label-right">DH2OCOL</span>
+            <span id="location" class="input-value">Valledupar, Colombia</span>
+            <span id="company" class="input-label-right">DH2OCOL</span>
           </div>
         </div>
       </section>
@@ -94,18 +108,7 @@
           ></span>
           <span>WhatsApp</span>
         </a>
-
         <div class="social-grid">
-          <a id="mail-link" class="social-btn" target="_blank" rel="noopener">
-            <span class="icon"
-              ><svg viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2Zm-1.4 4-6.6 4.9L5.4 8H18.6ZM4 18V9.2l8 6 8-6V18H4Z"
-                /></svg
-            ></span>
-            <span>Correo</span>
-          </a>
           <a id="ig-link" class="social-btn" target="_blank" rel="noopener">
             <span class="icon"
               ><svg viewBox="0 0 24 24">
@@ -126,16 +129,6 @@
             ></span>
             <span>Facebook</span>
           </a>
-          <a id="yt-link" class="social-btn" target="_blank" rel="noopener">
-            <span class="icon"
-              ><svg viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M23.5 6.2c-.3-1.2-1.2-2.1-2.4-2.4C19.5 3.3 12 3.3 12 3.3s-7.5 0-9.1.5C1.7 4.1.8 5 .5 6.2.1 8 .1 12 .1 12s0 4 .4 5.8c.3 1.2 1.2 2.1 2.4 2.4 1.6.5 9.1.5 9.1.5s7.5 0 9.1-.5c1.2-.3 2.1-1.2 2.4-2.4.4-1.8.4-5.8.4-5.8s0-4-.4-5.8ZM9.8 15.5V8.5L15.8 12l-6 3.5Z"
-                /></svg
-            ></span>
-            <span>YouTube</span>
-          </a>
           <a id="tt-link" class="social-btn" target="_blank" rel="noopener">
             <span class="icon"
               ><svg viewBox="0 0 24 24">
@@ -146,6 +139,16 @@
             ></span>
             <span>TikTok</span>
           </a>
+          <a id="mail-link" class="social-btn" target="_blank" rel="noopener">
+            <span class="icon"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2Zm-1.4 4-6.6 4.9L5.4 8H18.6ZM4 18V9.2l8 6 8-6V18H4Z"
+                /></svg
+            ></span>
+            <span>Correo</span>
+          </a>
         </div>
       </section>
 
@@ -155,70 +158,9 @@
             <h2>Medios de pago</h2>
           </div>
           <div class="pay-methods">
-            <div class="pay-item">
-              <span class="icon"
-                ><svg viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M7 3 3 7h3v8h2V7h3L7 3Zm10 18 4-4h-3V9h-2v8h-3l4 4Z"
-                  /></svg
-              ></span>
-              <a
-                id="btn-pay-transfer"
-                class="pay-link"
-                target="_blank"
-                rel="noopener"
-                >Transferencia</a
-              >
-            </div>
-            <div class="pay-item">
-              <span class="icon"
-                ><svg viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M3 6h18v12H3V6Zm2 2v8h14V8H5Zm7 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"
-                  /></svg
-              ></span>
-              <a
-                id="btn-pay-cash"
-                class="pay-link"
-                target="_blank"
-                rel="noopener"
-                >Efectivo</a
-              >
-            </div>
-            <div class="pay-item">
-              <span class="icon"
-                ><svg viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M13 3 4 14h6l-1 7 9-11h-6l1-7Z"
-                  /></svg
-              ></span>
-              <a
-                id="btn-pay-pse"
-                class="pay-link"
-                target="_blank"
-                rel="noopener"
-                >PSE</a
-              >
-            </div>
-            <div class="pay-item">
-              <span class="icon"
-                ><svg viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M3 6h18v12H3V6Zm2 2v2h14V8H5Zm0 9h8v-3H5v3Z"
-                  /></svg
-              ></span>
-              <a
-                id="btn-pay-card"
-                class="pay-link"
-                target="_blank"
-                rel="noopener"
-                >Tarjeta de crédito</a
-              >
-            </div>
+            <p class="pay-summary">
+              💳 Pagos: Transferencia · Efectivo · PSE · Tarjeta
+            </p>
             <a
               id="btn-pay-instructions"
               class="btn outline small"
@@ -237,7 +179,6 @@
           </div>
         </div>
       </section>
-
       <footer class="footer">
         <p>© <span id="year"></span> DH2OCOL. Tarjeta digital.</p>
       </footer>

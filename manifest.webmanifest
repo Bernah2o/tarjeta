@@ -7,7 +7,7 @@
   "theme_color": "#1986c8",
   "description": "Tarjeta digital DH2OCOL: contacto, redes, WhatsApp, pago Nequi y QR.",
   "icons": [
-    { "src": "img/operador.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "img/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+    { "src": "img/logo.svg", "sizes": "192x192", "type": "image/svg+xml" },
+    { "src": "img/berna.jpeg", "sizes": "any", "type": "image/svg+xml" }
   ]
 }

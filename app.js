@@ -30,6 +30,8 @@ function initProfile(p) {
     "DH2O";
   document.getElementById("name").textContent = displayName;
   document.getElementById("title").textContent = p.title || "";
+  const subEl = document.getElementById("subtitle");
+  if (subEl) subEl.textContent = p.bio || "Cuidamos tu Agua, Cuidamos tu Salud";
 
   const siteLink = p.site || window.location.origin;
   const waLink = buildWhatsAppLink(p);
@@ -81,6 +83,8 @@ function initProfile(p) {
   if (jobEl) jobEl.textContent = p.job_title || "";
   const companyEl = document.getElementById("company");
   if (companyEl) companyEl.textContent = p.company || "—";
+  const locEl = document.getElementById("location");
+  if (locEl) locEl.textContent = p.location || "—";
   // Se eliminaron Location y Education del UI
 
   // Avatar y logo desde profile.json
@@ -276,11 +280,7 @@ async function bootstrap() {
         chipsEl.appendChild(span);
       });
     }
-    const subEl = document.getElementById("subtitle");
-    if (subEl) {
-      const slogan = "Cuidamos tu Agua, Cuidamos tu Salud";
-      subEl.textContent = slogan;
-    }
+    // El subtítulo ya se define en initProfile a partir de p.bio
   } catch (e) {
     initProfile({});
   }
