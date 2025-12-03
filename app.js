@@ -36,7 +36,8 @@ function initProfile(p) {
   const mailSubject = encodeURIComponent("Consulta DH2O");
   const mailLink = `mailto:${p.email || ""}?subject=${mailSubject}`;
 
-  state.qrUrl = siteLink;
+  // QR debe apuntar a vcard (qr_site) y "Ir a la web" al sitio principal (site)
+  state.qrUrl = p.qr_site || p.site || window.location.origin;
 
   document.getElementById("wa-link").href = waLink;
   document.getElementById("mail-link").href = mailLink;
@@ -117,7 +118,7 @@ function initProfile(p) {
   if (btnWebsite) btnWebsite.href = p.site || window.location.origin;
   const qrThumb = document.getElementById("qr-thumb");
   if (qrThumb) {
-    qrThumb.src = buildQrUrl(siteLink);
+    qrThumb.src = buildQrUrl(state.qrUrl);
     qrThumb.addEventListener("click", showQr);
   }
 
