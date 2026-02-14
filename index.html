@@ -6,12 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>DH2OCOL | Tarjeta Digital</title>
+    <title>DH2OCOL S.A.S | Tarjeta Digital</title>
     <meta
       name="description"
       content="Tarjeta digital DH2OCOL: contacto, redes, WhatsApp, pago Nequi y QR para compartir."
     />
-    <meta name="theme-color" content="#1986c8" />
+    <meta name="theme-color" content="#0d4f8b" />
     <link rel="icon" type="image/svg+xml" href="img/logo_4.png" />
     <link rel="shortcut icon" href="img/logo_4.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="img/operador.png" />
@@ -20,42 +20,44 @@
   </head>
   <body>
     <main class="container">
-      <section class="profile-card">
-        <div class="profile-top">
-          <div class="avatar-wrap">
-            <img
-              id="avatar-img"
-              class="avatar"
-              src="img/berna.png"
-              alt="Gerente"
-            />
-            <img
-              id="brand-badge-img"
-              class="brand-badge"
-              src="img/logo.svg"
-              alt="Logo DH2OCOL"
-            />
+      <div class="hero-banner">
+        <section class="profile-card">
+          <div class="profile-top">
+            <div class="avatar-wrap">
+              <img
+                id="avatar-img"
+                class="avatar"
+                src="img/berna.png"
+                alt="Gerente"
+              />
+              <img
+                id="brand-badge-img"
+                class="brand-badge"
+                src="img/logo.svg"
+                alt="Logo DH2OCOL"
+              />
+            </div>
+            <div class="identity">
+              <h1 id="name">DH2OCOL S.A.S</h1>
+              <p id="title">
+                Expertos certificados en limpieza, desinfección e instalación de
+                tanques elevados. Protegemos tu agua potable con procesos avalados
+                por normas sanitarias.
+              </p>
+              <p id="subtitle" class="tagline">
+                Cuidamos tu Agua, Cuidamos tu Salud
+              </p>
+            </div>
           </div>
-          <div class="identity">
-            <h1 id="name">DH2OCOL</h1>
-            <p id="title">
-              Expertos certificados en limpieza, desinfección e instalación de
-              tanques elevados. Protegemos tu agua potable con procesos avalados
-              por normas sanitarias. Seguridad, calidad y resultados
-              comprobados.
-            </p>
-            <p id="subtitle" class="tagline">
-              Cuidamos tu Agua, Cuidamos tu Salud
-            </p>
-          </div>
-        </div>
 
-        <div id="chips" class="chips">
-          <span class="chip">Solicitar Limpieza y Desinfección</span>
-          <span class="chip">Cotizar Instalación de Tanque</span>
-          <span class="chip">Servicio de Reparación / Mantenimiento</span>
-          <span class="chip">Inspección con Dron - Revisiones Visuales</span>
-        </div>
+          <div id="chips" class="chips">
+            <span class="chip">Solicitar Limpieza y Desinfección</span>
+            <span class="chip">Cotizar Instalación de Tanque</span>
+            <span class="chip">Servicio de Reparación / Mantenimiento</span>
+            <span class="chip">Inspección con Dron - Revisiones Visuales</span>
+          </div>
+        </section>
+      </div>
 
         <div class="card-actions">
           <button id="btn-vcard" class="btn primary">Guardar contacto</button>
@@ -69,28 +71,104 @@
             >Ir a la web</a
           >
         </div>
+
+      <!-- Stats de confianza -->
+      <section class="trust-stats">
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Hogares atendidos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Certificaciones</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Estrellas Google</span>
+        </div>
       </section>
 
-      <section class="profile">
-        <h2>Perfil</h2>
-        <div class="profile-list">
-          <div class="profile-input">
-            <span id="first-name" class="input-value">Bernardino</span>
-            <span id="last-name" class="input-icon">de Aguas</span>
+      <!-- Servicios -->
+      <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Limpieza y Desinfecci&oacute;n</h3>
+              <p>Tanques de agua potable con aval sanitario</p>
+            </div>
+            <span class="service-price">Desde $70.000</span>
           </div>
-
-          <div class="profile-input">
-            <span id="job-title" class="input-value"
-              >Ingeniero Industrial - Especialista en SST</span
-            >
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2V9h2v8zm-4 0H6v-4h2v4zm8 0h-2v-6h2v6z"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Instalaci&oacute;n de Tanques</h3>
+              <p>Tanques elevados con estructura segura</p>
+            </div>
+            <span class="service-price">Desde $150.000</span>
           </div>
-
-          <div class="profile-input row-between">
-            <span id="location" class="input-value">Valledupar, Colombia</span>
-            <span id="company" class="input-label-right">DH2OCOL</span>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M22 14h-1c0-3.87-3.13-7-7-7h-1V5.73c1.17-.41 2-1.52 2-2.83 0-1.66-1.34-3-3-3S9 1.24 9 2.9c0 1.31.83 2.42 2 2.83V7h-1c-3.87 0-7 3.13-7 7H2c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h1v1c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1z"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Inspecci&oacute;n con Dron</h3>
+              <p>Revisiones visuales a&eacute;reas profesionales</p>
+            </div>
+            <span class="service-price">Desde $50.000</span>
           </div>
         </div>
       </section>
+
+      <!-- Certificaciones -->
+      <section class="certifications">
+        <h2>Respaldo y Certificaciones</h2>
+        <div class="cert-grid">
+          <div class="cert-badge">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <span>Aval Sanitario</span>
+            <small>Secretar&iacute;a de Salud</small>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon peace">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            <span>Sello de Paz</span>
+            <small>Compromiso social</small>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon fair">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <span>Plazos Justos</span>
+            <small>Pago oportuno</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Horario de atención -->
+      <section class="schedule-section">
+        <div class="schedule-card">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          <span>Lun-Vie 8:00-18:00 | S&aacute;b 8:00-13:00</span>
+        </div>
+      </section>
+
+      <!-- Hidden elements for profile.json compatibility -->
+      <span id="first-name" hidden></span>
+      <span id="last-name" hidden></span>
+      <span id="job-title" hidden></span>
+      <span id="location" hidden></span>
+      <span id="company" hidden></span>
 
       <section class="social-actions">
         <a
@@ -159,7 +237,7 @@
           </div>
           <div class="pay-methods">
             <p class="pay-summary">
-              💳 Pagos: Transferencia · Efectivo · PSE · Tarjeta
+              💳 Aceptamos pagos por transferencia bancaria, PSE, tarjeta débito/crédito y efectivo.
             </p>
             <a
               id="btn-pay-instructions"
@@ -179,8 +257,44 @@
           </div>
         </div>
       </section>
+      <!-- Testimonios -->
+      <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-scroll">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Excelente servicio, son muy cuidadosos con los productos que usan."</p>
+            <span class="testimonial-author">&mdash; Ernesto Mosquera</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Servicio profesional. Personal altamente calificado y comprometido."</p>
+            <span class="testimonial-author">&mdash; Salomon Cadena</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Excelente servicio, recomendados al 100%."</p>
+            <span class="testimonial-author">&mdash; Yamisito Mercado</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NFC / Compartir -->
+      <section class="nfc-banner">
+        <div class="nfc-content">
+          <div class="nfc-icon-wrap">
+            <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H4V4h16v16zM18 6h-5c-1.1 0-2 .9-2 2v2.28c-.6.35-1 .98-1 1.72 0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.37-1-1.72V8h3v8H8V8h2V6H8c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
+          </div>
+          <div class="nfc-text">
+            <strong>Comparte esta tarjeta</strong>
+            <span>Acerca tu tel&eacute;fono con NFC, escanea el QR o comparte el enlace</span>
+          </div>
+        </div>
+      </section>
+
       <footer class="footer">
-        <p>© <span id="year"></span> DH2OCOL. Tarjeta digital.</p>
+        <p>© <span id="year"></span> DH2OCOL S.A.S. Tarjeta digital.</p>
+        <p class="footer-sub">Valledupar, Cesar &mdash; Colombia</p>
       </footer>
     </main>
 
