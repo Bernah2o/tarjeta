@@ -1,11 +1,11 @@
-const CACHE_NAME = 'dh2o-card-v5';
+const CACHE_NAME = 'dh2o-card-v6';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/profile.json',
-  '/manifest.webmanifest'
+  './',
+  'index.html',
+  'styles.css',
+  'app.js',
+  'profile.json',
+  'manifest.webmanifest'
 ];
 
 self.addEventListener('install', (event) => {

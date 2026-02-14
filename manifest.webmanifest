@@ -1,13 +1,14 @@
 {
-  "name": "DH2OCOL Card",
-  "short_name": "DH2OCOL Card",
-  "start_url": "/",
+  "name": "DH2OCOL S.A.S - Tarjeta Digital",
+  "short_name": "DH2OCOL",
+  "start_url": ".",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#1986c8",
-  "description": "Tarjeta digital DH2OCOL: contacto, redes, WhatsApp, pago Nequi y QR.",
+  "background_color": "#f4f6f9",
+  "theme_color": "#0d4f8b",
+  "orientation": "portrait",
+  "description": "Tarjeta digital DH2OCOL S.A.S: contacto, redes, WhatsApp y QR para compartir.",
   "icons": [
-    { "src": "img/logo.svg", "sizes": "192x192", "type": "image/svg+xml" },
-    { "src": "img/berna.png", "sizes": "any", "type": "image/svg+xml" }
+    { "src": "img/logo_4.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/logo_4.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }

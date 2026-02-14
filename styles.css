@@ -16,7 +16,7 @@
   --radius: 8px;
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body {
   margin: 0;
   padding: 0;
@@ -24,14 +24,21 @@ html, body {
   color: var(--text);
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.container { max-width: 480px; margin: 0 auto; padding: 0 0 20px; }
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+}
 
 /* Hero Banner */
 .hero-banner {
   background: linear-gradient(135deg, #0d4f8b 0%, #1986c8 60%, #1eb8d1 100%);
   padding: 28px 20px 24px;
+  padding-top: calc(28px + env(safe-area-inset-top, 0px));
   border-radius: 0 0 24px 24px;
   margin-bottom: 20px;
   position: relative;
@@ -86,6 +93,7 @@ html, body {
   font-size: 0.78rem;
   font-weight: 500;
   cursor: default;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 
@@ -116,7 +124,11 @@ html, body {
   transition: all 0.2s ease;
   font-family: inherit;
 }
-.btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.btn { min-height: 44px; }
+@media (hover: hover) {
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+}
+.btn:active { transform: scale(0.97); }
 .btn.primary { background: var(--green); color: #fff; box-shadow: 0 2px 8px rgba(0,128,55,0.3); }
 .btn.secondary { background: var(--primary); color: #fff; box-shadow: 0 2px 8px rgba(13,79,139,0.3); }
 .btn.outline {
@@ -186,7 +198,9 @@ html, body {
   box-shadow: var(--card-shadow);
   transition: border-color 0.2s;
 }
-.service-card:hover { border-color: var(--primary-light); }
+@media (hover: hover) {
+  .service-card:hover { border-color: var(--primary-light); }
+}
 .service-icon {
   width: 44px;
   height: 44px;
@@ -427,7 +441,11 @@ html, body {
   transition: all 0.2s ease;
   box-shadow: var(--card-shadow);
 }
-.social-btn:hover { border-color: var(--primary-light); box-shadow: 0 4px 12px rgba(13,79,139,0.1); }
+.social-btn { min-height: 44px; }
+@media (hover: hover) {
+  .social-btn:hover { border-color: var(--primary-light); box-shadow: 0 4px 12px rgba(13,79,139,0.1); }
+}
+.social-btn:active { transform: scale(0.97); }
 .social-btn.full-width { width: 100%; margin-bottom: 10px; }
 .social-grid {
   display: flex;
